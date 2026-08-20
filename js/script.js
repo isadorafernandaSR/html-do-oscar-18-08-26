@@ -1,10 +1,11 @@
+document.getElementById('formLogin').addEventListener('submit', function(event) {
+    event.preventDefault()
 
-// Get the modal
-var modal = document.getElementById('id01');
+    var botao = document.getElementById('btnEntrar')
+    botao.textContent = 'Carregando artigo...'
+    botao.style.backgroundColor = '#888'
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+    setTimeout(function() {
+        window.location.href = 'espurr.html'
+    }, 1000)
+})

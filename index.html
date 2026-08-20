@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso à Pokédex</title>
+    <link rel="stylesheet" href="/CSS/style.css"> <!--conecta no css do login-->
 </head>
 <body>
 
-<h2>SEU POKÉMON FAAAAVORITO </h2>
+    <div class="caixa-login">
+        <h2>Bem-vindo de volta</h2>
+        <p class="subtitulo">Faça login para ler sobre o Espurr!</p>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Aqui aqui aqui</button>
+        <form id="formLogin">
+            <div class="campo">
+                <label for="usuario">Nome de Usuário:</label>
+                <input type="text" id="usuario" placeholder="Ex: Ash Ketchum" required>
+            </div>
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="foto de perfil.jpg" alt="Avatar" class="avatar">
+            <div class="campo">
+                <label for="senha">Senha de Acesso:</label>
+                <input type="password" id="senha" required>
+            </div>
+
+            <button type="submit" id="btnEntrar">Entrar na Pokédex</button>
+        </form>
     </div>
 
-    <div class="container">
-      <label for="uname"><b>pokémon</b></label>
-      <input type="pokémon" placeholder="teu pokémon favorito aqui" name="uname" >
-
-      <label for="psw"><b>opinião</b></label>
-      <input type="opinião" placeholder="você acha que ele é...?" name="psw" >
-        
-      <button type="submit">clica aqui pra enviar pro void vazio do universo</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<script scr="./js/script.js"></script>
-
+    <script src="/JS/script.js"></script> <!--conecta no script-->
 </body>
 </html>
